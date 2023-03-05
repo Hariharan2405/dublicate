@@ -1,0 +1,38 @@
+<!DocType html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="operators">
+		<meta name="keywords" content="HTML,JavaScript">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Dublicate</title>
+	
+	
+	</head>
+	
+	<body>
+		<script>
+			let a=[1,2,2,3,3]; 
+			function dub(a){
+			let b=[]; c=[];
+			for(i=0; i<a.length; i++){
+			let x=false;
+			for(j=0; j<b.length; j++){
+					if(a[i]===b[j]){
+					c.push(a[i]);
+						x=true;
+						break;
+					}
+					}
+					if(!x){
+						b.push(a[i]);
+					}
+			}
+			return c;
+			}
+			document.write(dub(a));
+			
+
+		</script>
+	</body>
+</html>
